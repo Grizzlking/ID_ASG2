@@ -2,8 +2,7 @@
  Assignment 2 for Interactive Development
 
 ## Overall concept
-A website like [Sporcle](https://www.sporcle.com/?refresh) where users are able to sign up for an account
-and earn points to purchase cosemetic items from a shop. Quizes are sorted into categories and give different points according to the difficulty as well as the time taken to complete the quiz. A leaderboard is assigned to each quiz and showcases the fastest user to complete it.
+Our aim is to encourage users to gain more knowledge by taking quizzes in a fun and exciting manner. A website where users are able to sign up for an account and earn points to purchase cosemetic items from a shop. Quizzes are sorted into categories and give different points according to the difficulty as well as the time taken to complete the quiz. A leaderboard is assigned to each quiz and showcases the fastest user to complete it.
 
 ## Features
 
@@ -59,3 +58,14 @@ The following data structure is used
 
 ### Lottie
 Used for animated images for multi purpose
+
+## Testing
+
+## Credits
+
+### Content
+
+### Media
+
+### Acknowledgements
+- We received inspiration for this project from [Sporcle](https://www.sporcle.com/).
