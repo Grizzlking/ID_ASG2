@@ -28,27 +28,34 @@ Account, Quiz, Leaderboards, Unlock details will all be stored in RestDB and ret
 
 The following data structure is used
 #### account
-|Field|Data Type|Description|
-|-----|---------|-----------|
-|UserID|number|Required, Auto Increment|
+|Field|Data Type|Constraint|Description|
+|-----|---------|----------|-----------|
+|UserID|number|Required & Auto Increment|
 |Username|text|Required & Unique|
 |Password|text|Required|
 |Points|number|Required, Auto Generated as 0 when creating an account|
 |Preferences|text|Not Required|
 
-#### unlocks
-|Field|Data Type|Description|
-|-----|---------|-----------|
-|UnlockStatus|bool|
-||
+#### item-list
+|Field|Data Type|Constraint|Description|
+|-----|---------|----------|-----------|
+|item-name|text||
+|item-desc|text||
+|cost|number||
 
 #### quizes
-|Field|Data Type|Description|
-|-----|---------|-----------|
-|QuizID|
-|QuizName|
-|QuizDesc|
-|Image|
+|Field|Data Type|Constraint|Description|
+|-----|---------|----------|-----------|
+|QuizID|number|Required & Auto Increment|
+|QuizName|text|Required & Unique|
+|QuizDesc|text|Not Required|
+|Image|text|Not Required|
+|Event|bool|Required|
+
+#### leaderboard
+|Field|Data Type|Constraint|Description|
+|-----|---------|----------|-----------|
+
 
 ### Lottie
 Used for animated images for multi purpose
