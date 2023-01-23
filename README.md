@@ -6,6 +6,9 @@ Our aim is to encourage users to gain more knowledge by taking quizzes in a fun 
 
 ## Features
 
+### Leaderboard
+Score will be calculated by the number of correct answers and the time taken to complete the quiz.
+
 ### Account
 Users are able to register and log in on an account on the website.
 The account stores points and the user's preferences to quiz categories.
