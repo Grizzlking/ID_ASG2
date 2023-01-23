@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Nav Bar CSS */
+nav{
+    display: flex;
+    
+    border: 1px solid black;
+    border-radius: 10%;
+    width: 80%;
+    padding: 5px 20px;
+    margin: auto;
+}
+
+nav a,li,p{
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.nav__links{
+    list-style: none;
+}
+
+.nav__links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: orange;
+}
+
+.points__area {
+    border: 1px solid black;
+    border-radius: 5%;
+}
+
+.profile__area {
+    border: 1px solid black;
+    border-radius: 5%;
+}
+
