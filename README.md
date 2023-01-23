@@ -12,6 +12,7 @@ Score will be calculated by the number of correct answers and the time taken to 
 ### Account
 Users are able to register and log in on an account on the website.
 The account stores points and the user's preferences to quiz categories.
+Users are also able to set profile pictures.
 
 ### Points
 Points can be used to purchase cosemetics for the user which will change the aesthitics of that user in different ways. 
@@ -23,6 +24,7 @@ Quizes are sorted into categories and have different difficulties which will awa
 Users are able to unlock cosmetics using their points earned from playing quizes.
 Some of the unlocks are
 - Name text color
+- Title
 
 ## Technology Used
 ### RestDB
@@ -32,18 +34,22 @@ The following data structure is used
 #### account
 |Field|Data Type|Constraint|Description|
 |-----|---------|----------|-----------|
+|profilepic|text||Contains link for user's profile pic|
 |UserID|number|Required & Auto Increment|
 |Username|text|Required & Unique|
 |Password|text|Required|
 |Points|number|Required, Auto Generated as 0 when creating an account|
 |Preferences|text|Not Required|
+|item-list|Select many item-list||Used to select items from item list / serves as inventory|
 
 #### item-list
 |Field|Data Type|Constraint|Description|
 |-----|---------|----------|-----------|
 |item-name|text||
 |item-desc|text||
-|cost|number||
+|cost|number||Cost of item|
+|item-cat|text|||
+|change|text|||
 
 #### quizes
 |Field|Data Type|Constraint|Description|
@@ -52,11 +58,13 @@ The following data structure is used
 |QuizName|text|Required & Unique|
 |QuizDesc|text|Not Required|
 |Image|text|Not Required|
-|Event|bool|Required|
+|Event|bool|Required|Used to say if there's an event going on|
 
 #### leaderboard
 |Field|Data Type|Constraint|Description|
 |-----|---------|----------|-----------|
+|account|Select many account||Used to get account details for leaderboard|
+|quiz|Select 1 quiz||Used to get assign that one quiz a leaderboard with all the account details
 
 
 ### Lottie
