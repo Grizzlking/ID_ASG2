@@ -24,11 +24,10 @@ Some of the unlocks are
 
 ## Technology Used
 ### RestDB
+Account, Quiz, Leaderboards, Unlock details will all be stored in RestDB and retrieved from there using an API
 
-#### Accounts
-Account Details will be stored in RestDB
-
-##### account
+The following data structure is used
+#### account
 |Field|Data Type|Description|
 |-----|---------|-----------|
 |UserID|number|Required, Auto Increment|
@@ -37,13 +36,13 @@ Account Details will be stored in RestDB
 |Points|number|Required, Auto Generated as 0 when creating an account|
 |Preferences|text|Not Required|
 
-##### unlocks
+#### unlocks
 |Field|Data Type|Description|
 |-----|---------|-----------|
 |UnlockStatus|bool|
 ||
 
-##### quizes
+#### quizes
 |Field|Data Type|Description|
 |-----|---------|-----------|
 |QuizID|
@@ -51,6 +50,5 @@ Account Details will be stored in RestDB
 |QuizDesc|
 |Image|
 
-##### 
-
-Preferences to sort quizes by category
+### Lottie
+Used for animated images for multi purpose
