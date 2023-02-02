@@ -1,12 +1,12 @@
 <!DOCTYPE html>
     <head>
-        <link rel="stylesheet" href="style_login_page.css">
+        <link rel="stylesheet" href="..\Sign_up_page\style_signup_page.css">
         <meta name="viewport" content="width=device-wdith, initial-scale=1">
     </head>
     <body>
         <div class="center">
-            <h1>Login</h1>
-            <form method="post">
+            <h1>Sign Up Now!</h1>
+            <form>
                 <div class="txt_field">
                     <input type="text" id="username-input" required>
                     <span></span>
@@ -15,16 +15,18 @@
                 <div class="txt_field">
                     <input type="password" id="password-input" required>
                     <span></span>
-                    <label>Password</label>
+                    <label>Create Password</label>
                 </div>
-                <div class="pass">Forgot Password?</div>
-                <input type="button" value="Login" id="login-submit">
-                <div class="signup_link">
-                    Not a member? <a href="signup_page.html">Signup</a>
+                <div class="txt_field">
+                    <input type="password" id="check-password" required>
+                    <span></span>
+                    <label>Confirm Password</label>
                 </div>
+                <input type="button" value="Sign Up" id="signUp">
             </form>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-        <script src="login-script.js"></script>   
+        <script src="..\Sign_up_page\signup-script.js"></script>
     </body>
+      
 </html>
