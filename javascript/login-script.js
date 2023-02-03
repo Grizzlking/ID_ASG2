@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
     const APIKEY = "63ce80d5969f06502871b127";
 

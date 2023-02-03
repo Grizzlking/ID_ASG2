@@ -58,8 +58,11 @@ $(document).ready(function(){
             // true if the username is not already registered
             var value = true;
 
+            var allowSignUp = true;
+
             for (var i  = 0; i < response.length; i++) {
                 if(response[i].Username == usernameInput ){
+<<<<<<< Updated upstream:javascript/signup-script.js
                    console.log("Invalid Username as its not unique");
                    alert("Username is already registered. Please try another");
                    // false if username is already registered
@@ -89,6 +92,28 @@ $(document).ready(function(){
             $('#username-input').val('');
             $("#password-input").val('');
             $("#check-password").val('');
+=======
+                    console.log("Invalid Username as its not unique");
+                    alert("Username is already registered. Please try another");
+                    allowSignUp = false;
+                }
+            }
+
+            if(allowSignUp == true){
+                let password = $("#password-input").val();
+                let check_password = $("#check-password").val();
+    
+                if (password == ""){
+                    alert("Field cannot be empty.");
+                }
+                else if(password != check_password){
+                    alert("Password didn't match try again.");
+                }
+                else if(password == check_password){
+                    signUp();
+                }    
+            }
+>>>>>>> Stashed changes:signup-script.js
         });   
     })
 })
