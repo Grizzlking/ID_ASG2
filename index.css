@@ -77,4 +77,20 @@
     height:auto;
 }
 
-/* scroll carousell */
+/* scroll item */
+.wrapped{  
+    border:1px solid #ddd;
+    display: flex;
+    overflow-x: auto;
+  }
+  .wrapped::-webkit-scrollbar-thumb{
+    width: 0px;
+  }
+  .wrapped .item{
+    min-width: 110px;
+    height: 110px;
+    line-height: 110px;
+    text-align: center;
+    background-color: #ddd;
+    margin-right: 2px;
+  }
