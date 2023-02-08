@@ -1,51 +1,35 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+/* global font */
+body{
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Nav Bar CSS */
-nav{
+/* nav bar */
+.container-fluid{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.points-section{
+    border: black solid 2px;
+    padding: 5px 0 5px;
+    box-sizing: border-box;
+}
+
+.profile-section{
+    border: black solid 2px;
+    border-radius: 1%;
     display: flex;
-    
-    border: 1px solid black;
-    border-radius: 10%;
-    width: 80%;
-    padding: 5px 20px;
-    margin: auto;
+    margin:auto;
+    box-sizing: border-box;
 }
 
-nav a,li,p{
-    font-weight: 500;
-    font-size: 16px;
-    text-decoration: none;
+.profile{
+    padding: 5px 0px 5px;
 }
 
-.nav__links{
-    list-style: none;
+.profile-pic{
+    border:solid black 2px;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
 }
-
-.nav__links li{
-    display: inline-block;
-    padding: 0px 20px;
-}
-
-.nav__links li a{
-    transition: all 0.3s ease 0s;
-}
-
-.nav__links li a:hover {
-    color: orange;
-}
-
-.points__area {
-    border: 1px solid black;
-    border-radius: 5%;
-}
-
-.profile__area {
-    border: 1px solid black;
-    border-radius: 5%;
-}
-
