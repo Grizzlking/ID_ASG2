@@ -1,0 +1,80 @@
+/* nav-bar */
+.container-fluid{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.points-section{
+    border: black solid 2px;
+    padding: 5px 0 5px;
+    box-sizing: border-box;
+}
+
+.profile-section{
+    border: black solid 2px;
+    border-radius: 1%;
+    display: flex;
+    margin:auto;
+    box-sizing: border-box;
+}
+
+.profile{
+    padding: 5px 0px 5px;
+}
+
+.profile-pic{
+    border:solid black 2px;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+}
+
+/* recent-developments section */
+
+.recent-developments{
+    display: flex;
+    box-sizing: border-box;
+    width:80%;
+    height:450px;
+    border:solid black 2px;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 25px;
+    overflow: hidden;
+}
+
+.content{
+    width: 30%;
+    height: 450px;
+    background-color: aqua;
+}
+
+.separator{
+    padding:0px 10px 0px 10px;
+}
+.line{
+    width: 4px;
+    height: 45%;
+    background-color: purple;
+    margin: auto;
+}
+.circle{
+    box-sizing: border-box;
+    width: 25px;
+    height: 25px;
+    border-radius: 12.5px;
+    border: solid purple 2px;
+    margin: 10px 0px 10px 0px;
+}
+
+/* carousell */
+.recent-developments .carousel-container{
+    width: 70%;
+    height:450px;
+}
+.recent-developments .carousel-image{
+    width: 100%;
+    height:auto;
+}
+
+/* scroll carousell */

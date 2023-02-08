@@ -1,14 +1,142 @@
-<!DOCTYPE html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <meta name="viewport" content="width=device-wdith, initial-scale=1">
-    </head>
-    <body>
-        <p id="clowncar"></p>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
 
-        <input type="text" id="username-input">
-        <input type="text" id="password-input">
+    <!-- Bootstrap -->
+    <!--
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    -->    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md bg-body-tertiary ms-auto">
+        <div class="container-fluid">
+            <!-- brand logo -->
+            <a class="navbar-brand" href="#">
+              <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Bootstrap" width="30" height="24">
+            </a>
+            <!-- Hamburger -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- nav buttons -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle nav-link active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                      Quizzes
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Geography</a></li>
+                      <li><a class="dropdown-item" href="#">Horror</a></li>
+                      <li><a class="dropdown-item" href="#">Nature</a></li>
+                      <li><a class="dropdown-item" href="#">Pop Culture</a></li>
+                      <li><a class="dropdown-item" href="#">Science</a></li>
+                      <li><a class="dropdown-item" href="#">and more...</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Events</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Shop</a>
+                </li>
+            </ul>
+            <!-- Points & Profile section -->
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-items">
+                    <div class="points-section">
+                        <span>2000</span> points
+                    </div>
+                </li>
+                </li class="nav-items">
+                    <div class="profile-section">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle nav-link active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                            </ul>
+                        </li>
+                        <div class="profile">
+                            <span><img src="profile-pic.jpg" alt="Bootstrap" class="profile-pic"></span>
+                            <span>Deon</span>
+                        </div>
+                    </div>
+                <li>
+            </ul>
+            </div>
+        </div>
+    </nav>
 
-        <input type="button" value="Submit" id="login-submit">
-    </body>    
+    <div class="recent-developments">
+        <div class="content">
+        </div>
+        <div class="separator">
+            <div class="line"></div>
+            <div class="circle"></div>
+            <div class="line"></div>
+        </div>
+        <!-- carousell -->
+        <div class="carousel-container">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="bannertest/genshin.jpg" class="carousel-image" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="bannertest/genshinbanner1.jpg" class="carousel-image" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="bannertest/genshinbanner3.jpg" class="carousel-image" alt="...">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+    <!--
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+  </body>
 </html>
