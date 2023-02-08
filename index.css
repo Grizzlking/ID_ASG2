@@ -1,4 +1,8 @@
 /* nav-bar */
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
 .container-fluid{
     margin-left: 60px;
     margin-right: 60px;
@@ -78,19 +82,70 @@
 }
 
 /* scroll item */
+.recent-developments .carousel-container{
+    width: 70%;
+    height:450px;
+}
+.recent-developments .carousel-image{
+    width: 100%;
+    height:auto;
+}
+
+/* scroll item */
+.heading{
+    margin-top: 100px;
+    text-align: center;
+}
+.strong-word{
+    font-size: 50px;
+    color: red;
+}
 .wrapped{  
     border:1px solid #ddd;
     display: flex;
     overflow-x: auto;
-  }
-  .wrapped::-webkit-scrollbar-thumb{
+    margin: 5px 20px 5px 20px;
+    width: 90%;
+    margin: auto;
+}
+.wrapped::-webkit-scrollbar-thumb{
     width: 0px;
-  }
-  .wrapped .item{
-    min-width: 110px;
-    height: 110px;
-    line-height: 110px;
-    text-align: center;
+}
+.wrapped .item{
+    border: solid black 2px;
+    border-radius: 5%;
+    min-width: calc(80%/3);
     background-color: #ddd;
-    margin-right: 2px;
-  }
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: calc(10%/3);
+    margin-left: calc(10%/3);
+    overflow: hidden;
+    transition: 1s;
+}
+.wrapped .item a .card{
+    height: 100%;
+}
+.wrapped .item a .card img{
+    height: 50%;
+}
+.card-body .card-text{
+    text-decoration: none;
+}
+.item a:link{
+    text-decoration: none;
+    color: black;
+}
+.item:hover{
+    transform: scale(1.05);
+    z-index: 2;
+    box-shadow: 5px 10px 3px;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    height: 250px;
+    background-color: black;
+    margin-top: 100px;
+}
