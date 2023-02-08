@@ -16,15 +16,13 @@ $(document).ready(function () {
             "cache-control": "no-cache"
             }
         }
-       
     
         $.ajax(settings).done(function (response) {
             console.log(response); 
 
             for (var i  = 0; i < response.length; i++) {
                 if(response[i].Username == usernameInput && response[i].Password == passwordInput){
-                    sessionStorage.setItem("username", response[i].Username);
-                    console.log("LOGIN SUCCESSFULLY");
+                    sessionStorage.setItem("id", response[i]._id);
                 }
             }
         });

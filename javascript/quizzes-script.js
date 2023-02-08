@@ -39,7 +39,6 @@ $(document).ready(function(){
                     </div>`
                 }
                 
-                
                 $("#test").html(content);
             }
 
