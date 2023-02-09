@@ -4,6 +4,9 @@
 }
 
 /* nav bar */
+nav{
+    margin-bottom: 50px;
+}
 .container-fluid{
     margin-left: 60px;
     margin-right: 60px;

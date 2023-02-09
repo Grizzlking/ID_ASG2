@@ -1,38 +1,3 @@
-/* nav-bar */
-body{
-    font-family: 'Montserrat', sans-serif;
-}
-
-.container-fluid{
-    margin-left: 60px;
-    margin-right: 60px;
-}
-
-.points-section{
-    border: black solid 2px;
-    padding: 5px 0 5px;
-    box-sizing: border-box;
-}
-
-.profile-section{
-    border: black solid 2px;
-    border-radius: 1%;
-    display: flex;
-    margin:auto;
-    box-sizing: border-box;
-}
-
-.profile{
-    padding: 5px 0px 5px;
-}
-
-.profile-pic{
-    border:solid black 2px;
-    width: 24px;
-    height: 24px;
-    border-radius: 12px;
-}
-
 /* recent-developments section */
 
 .recent-developments{
@@ -81,15 +46,6 @@ body{
     height:auto;
 }
 
-/* scroll item */
-.recent-developments .carousel-container{
-    width: 70%;
-    height:450px;
-}
-.recent-developments .carousel-image{
-    width: 100%;
-    height:auto;
-}
 
 /* scroll item */
 .heading{
