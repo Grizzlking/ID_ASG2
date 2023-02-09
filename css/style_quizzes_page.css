@@ -1,55 +1,17 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-	
+/* tips page */
+.tips-page{
+	height: 300px;
+	width: 80%;
+	display: flex;
+	margin:auto;
+	margin-bottom: 30px;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+.tips-page h1{
+	color: #F99417;
 }
-body {
-	line-height: 1;
+.tips-page p{
+	margin-top: 50px;
 }
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/* END OF CSS RESET */
-
 
 /* category */
 .category-heading{
@@ -95,14 +57,6 @@ table {
 }
 
 /* scroll item */
-.heading{
-    margin-top: 100px;
-    text-align: center;
-}
-.strong-word{
-    font-size: 50px;
-    color: red;
-}
 .wrapped{  
     border:1px solid #ddd;
     display: flex;
@@ -112,30 +66,38 @@ table {
     margin: auto;
     height: 250px;
 }
+.wrapped #inner-content{
+	display: flex;
+	width: 100%;
+}
 .wrapped::-webkit-scrollbar-thumb{
     width: 0px;
 }
-.wrapped .item{
+.wrapped #inner-content .item{
     border: solid black 2px;
     border-radius: 5%;
-    min-width: calc(80%/3);
+    width: calc(80%/4);
     margin-top: 20px;
     margin-bottom: 20px;
     margin-right: calc(10%/3);
     margin-left: calc(10%/3);
     overflow: hidden;
     transition: 1s;
+	height: 90%;
 }
 @media screen and (min-width:756px) {
     .wrapped .item{
-        min-width: calc(75%/4);
+        width: calc(75%/5);
     }
 }
-.wrapped .item a .card{
+.wrapped #inner-content .item a .card{
     height: 100%;
 }
-.wrapped .item a .card img{
-    height: 100%;
+.wrapped #inner-content .item a .card-body{
+    height: 40%;
+}
+.wrapped #inner-content .item a .card img{
+    height: 60%;
 }
 .card-body .card-text{
     text-decoration: none;

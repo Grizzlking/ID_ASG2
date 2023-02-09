@@ -48,6 +48,15 @@
     width: 100%;
 }
 
+/* line separator */
+.section-separator{
+    height: 10px;
+    width: 600px;
+    margin: auto;
+    background-color: #F99417;
+    margin-top: 90px;
+    border-radius: 25px;
+}
 
 /* scroll item */
 .heading{
@@ -100,7 +109,11 @@
     box-shadow: 5px 10px 3px;
 }
 
+
 /* footer */
+footer{
+    margin-top: 50px;
+}
 .container *{
     box-sizing: border-box;
 }
