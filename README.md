@@ -27,6 +27,12 @@ Some of the unlocks are
 - Title
 
 ## Technology Used
+### Lottie
+Used for animated images for multi purpose.
+
+### Bootstrap
+Used for front-end development.
+
 ### RestDB
 Account, Quiz, Leaderboards, Unlock details will all be stored in RestDB and retrieved from there using an API
 
@@ -65,10 +71,6 @@ The following data structure is used
 |-----|---------|----------|-----------|
 |account|Select many account||Used to get account details for leaderboard|
 |quiz|Select 1 quiz||Used to get assign that one quiz a leaderboard with all the account details
-
-
-### Lottie
-Used for animated images for multi purpose
 
 ## Testing
 
