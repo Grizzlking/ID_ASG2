@@ -4,36 +4,56 @@
 ## Overall concept
 Our aim is to encourage users to gain more knowledge by taking quizzes in a fun and exciting manner. A website where users are able to sign up for an account and earn points to purchase cosemetic items from a shop. Quizzes are sorted into categories and give different points according to the difficulty as well as the time taken to complete the quiz. A leaderboard is assigned to each quiz and showcases the fastest user to complete it.
 
+## Design Process
+This website will be aimed at people that want to take quizzes during their free time, to grow their knowledge and relieve stress with some fun quizzes! It will encourage users by adding gamification elements to our website.
+
+User stories:
+- As a new person, I would like to be able to sign in to the website and create an account to be able to earn points from solving quizzes and use them to get exciting prizes.
+
+- As a person that already has an account, I would like to be able to log in to the website from a different device.
+
 ## Features
 
-### Leaderboard
-Score will be calculated by the number of correct answers and the time taken to complete the quiz.
+### Existing Features
 
-### Account
+#### Account
 Users are able to register and log in on an account on the website.
-The account stores points and the user's preferences to quiz categories.
 Users are also able to set profile pictures.
 
-### Points
+### Features left to Implement
+
+#### Leaderboard
+Score will be calculated by the number of correct answers and the time taken to complete the quiz.
+
+#### Points
 Points can be used to purchase cosemetics for the user which will change the aesthitics of that user in different ways. 
 
-### Quiz
+#### Quiz
 Quizes are sorted into categories and have different difficulties which will award different amount of points accordingly.
 
-### Unlocks
+#### Unlocks
 Users are able to unlock cosmetics using their points earned from playing quizes.
 Some of the unlocks are
 - Name text color
 - Title
 
 ## Technology Used
-### Lottie
-Used for animated images for multi purpose.
+### [Hyper Text Markup Language]()
+- The project uses HTML to display frontend in a browser.
 
-### Bootstrap
-Used for front-end development.
+### [Cascading style sheet]()
+- The project uses CSS to style frontend in a browser,specifically HTML.
 
-### RestDB
+### [JQuery](https://jquery.com/)
+- The project uses JQuery to simplify DOM manipulation.
+
+### [LottieFiles](https://lottiefiles.com/)
+- The project uses Lottie Animations for animated images for multiple purposes.
+
+### [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+- The project uses Bootstrap to simplify front-end development.
+
+### [RestDB]()
 Account, Quiz, Leaderboards, Unlock details will all be stored in RestDB and retrieved from there using an API
 
 The following data structure is used
@@ -79,6 +99,6 @@ The following data structure is used
 ### Content
 
 ### Media
-
+- We received the lottie animations for this project from [LottieFiles](https://lottiefiles.com/).
 ### Acknowledgements
 - We received inspiration for this project from [Sporcle](https://www.sporcle.com/).
