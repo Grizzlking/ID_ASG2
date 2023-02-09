@@ -1,4 +1,7 @@
 $(document).ready(function () {
+    // hides loading screen
+    $('.loading-screen').hide();
+    
     const APIKEY = "63ce80d5969f06502871b127";
 
     function loginCheck(){
@@ -31,6 +34,9 @@ $(document).ready(function () {
 
     // Event Listener
     $("#login-submit").on("click", function(e){
+        // hides the entire page and show loading screen
+        $('.center').hide();
+        $('.loading-screen').show();
         loginCheck();
     });
 });
