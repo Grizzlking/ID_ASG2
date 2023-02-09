@@ -64,7 +64,7 @@
     margin: 5px 20px 5px 20px;
     width: 90%;
     margin: auto;
-    height: 250px;
+    height: 280px;
 }
 .wrapped #inner-content{
 	display: flex;
@@ -83,7 +83,7 @@
     margin-left: calc(10%/3);
     overflow: hidden;
     transition: 1s;
-	height: 90%;
+	height: 80%;
 }
 @media screen and (min-width:756px) {
     .wrapped .item{
