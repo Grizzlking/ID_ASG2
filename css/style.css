@@ -16,21 +16,27 @@ nav{
 }
 
 .points-section{
-    border: black solid 2px;
-    padding: 5px 0 5px;
+    padding: 8px 5px 8px;
     box-sizing: border-box;
+    background-color: #5D3891;
+    color:white;
+    border-radius: 10px;
+    margin-right: 20px;
 }
 
 .profile-section{
-    border: black solid 2px;
     border-radius: 1%;
     display: flex;
     margin:auto;
     box-sizing: border-box;
+    background-color: #5D3891;
+    color:white;
+    border-radius: 10px;
 }
 
 .profile{
-    padding: 5px 0px 5px;
+    padding: 5px 5px 5px;
+    margin: auto;
 }
 
 .profile-pic{
@@ -38,4 +44,8 @@ nav{
     width: 24px;
     height: 24px;
     border-radius: 12px;
+}
+
+#username-display{
+    margin-right: 5px;
 }
