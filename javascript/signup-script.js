@@ -10,7 +10,8 @@ $(document).ready(function(){
 
         var jsondata = {
             "Username" : username,
-            "Password" : password
+            "Password" : password,
+            "ProfilePic" : 'bannertest/default-profile-pic.jpg'
         }
 
         var settings = {
