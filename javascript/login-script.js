@@ -28,6 +28,12 @@ $(document).ready(function () {
                     sessionStorage.setItem("id", response[i]._id);
                     window.location.replace("index.html");
                 }
+                else{
+                    // if login fail
+                    $('.center').show();
+                    $('.loading-screen').hide();
+                    alert('login failed');
+                }
             }
         });
     }

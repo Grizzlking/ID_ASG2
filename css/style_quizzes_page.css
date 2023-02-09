@@ -93,3 +93,71 @@ table {
     height:100%;
     object-fit: cover;
 }
+
+/* scroll item */
+.heading{
+    margin-top: 100px;
+    text-align: center;
+}
+.strong-word{
+    font-size: 50px;
+    color: red;
+}
+.wrapped{  
+    border:1px solid #ddd;
+    display: flex;
+    overflow-x: auto;
+    margin: 5px 20px 5px 20px;
+    width: 90%;
+    margin: auto;
+    height: 250px;
+}
+.wrapped::-webkit-scrollbar-thumb{
+    width: 0px;
+}
+.wrapped .item{
+    border: solid black 2px;
+    border-radius: 5%;
+    min-width: calc(80%/3);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: calc(10%/3);
+    margin-left: calc(10%/3);
+    overflow: hidden;
+    transition: 1s;
+}
+@media screen and (min-width:756px) {
+    .wrapped .item{
+        min-width: calc(75%/4);
+    }
+}
+.wrapped .item a .card{
+    height: 100%;
+}
+.wrapped .item a .card img{
+    height: 100%;
+}
+.card-body .card-text{
+    text-decoration: none;
+    margin:auto;
+}
+.item a:link{
+    text-decoration: none;
+    color: black;
+}
+.item:hover{
+    transform: scale(1.05);
+    z-index: 2;
+    box-shadow: 5px 10px 3px;
+}
+
+.card{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+
+.item a .card:hover{
+    background-color: white;
+    color: black;
+}

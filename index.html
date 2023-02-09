@@ -18,14 +18,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
   </head>
   <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-md bg-body-tertiary ms-auto">
+    <nav class="navbar navbar-expand-md bg-body-tertiary ms-auto p-0">
         <div class="container-fluid">
             <!-- brand logo -->
-            <a class="navbar-brand" href="#">
-              <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Bootstrap" width="30" height="24">
+            <a class="navbar-brand p-0" href="#">
+              <img src="bannertest/logo.png" alt="Bootstrap" width="140" height="80">
             </a>
             <!-- Hamburger -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -80,6 +82,8 @@
 
     <div class="recent-developments">
         <div class="content">
+            <h2>Recent Developments</h2>
+            <p>this shows the recent developments in this space</p>
         </div>
         <div class="separator">
             <div class="line"></div>
@@ -96,13 +100,25 @@
                 </div>
                 <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="bannertest/genshin.jpg" class="carousel-image" alt="...">
+                    <img src="bannertest/rocket.jpg" class="carousel-image" alt="...">
+                    <div class="carousel-caption d-none d-md-block text-dark">
+                        <h5>Welcome to our Website!</h5>
+                        <p>You Are Our Very First Guests!</p>
+                    </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="bannertest/genshinbanner1.jpg" class="carousel-image" alt="...">
+                    <img src="bannertest/mountains.jpg" class="carousel-image" alt="...">
+                    <div class="carousel-caption d-none d-md-block text-white">
+                        <h5>New quiz has been released!</h5>
+                        <p>Like mountains? This one is just for you!</p>
+                    </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="bannertest/genshinbanner3.jpg" class="carousel-image" alt="...">
+                    <img src="bannertest/Maintenance-in-Progress.jpg" class="carousel-image" alt="...">
+                    <div class="carousel-caption d-none d-md-block text-white bg-dark">
+                        <h5>Shop is under maintenance</h5>
+                        <p>Please be Patient!</p>
+                      </div>
                 </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -122,8 +138,46 @@
     <div class="wrapped">
     </div>
 
-    <footer>
-
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">programs</a></li>
+                        <li><a href="#">terms & services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">hotline</a></li>
+                        <li><a href="#">forum</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>common questions</h4>
+                    <ul>
+                        <li><a href="#">quiz categories</a></li>
+                        <li><a href="#">quiz content</a></li>
+                        <li><a href="#">quiz policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
     
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

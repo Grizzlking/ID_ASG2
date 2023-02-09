@@ -33,7 +33,7 @@ $(document).ready(function(){
                             <p>more...</p>
                         </a>
                     </div>
-                    <div class="quiz-category" id="${response[i].QuizCat}-category">
+                    <div class="wrapped" id="${response[i].QuizCat}-category">
                         <div id = "inner-content">
                         </div>  
                     </div>`
@@ -45,11 +45,15 @@ $(document).ready(function(){
             for (var i = 0; i < response.length; i++){
                 if ($('#' + response[i].QuizCat + '-category' + ' ' + '.quiz-details').length < 5){
                     $('#' + response[i].QuizCat + '-category #inner-content').append(`
-                        <div class="quiz-details">
-                            <div class="image-container">
-                                <img src="${response[i].Image}">
-                            </div>
-                            <h2>${response[i].QuizName}</h2>
+                        <div class="item">
+                            <a href="#">
+                                <div class="card">
+                                    <img src="${response[i].Image}" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">${response[i].QuizName}</h5>
+                                    </div>
+                                </div>
+                            </a>
                         </div>`)
                     }
                 }
