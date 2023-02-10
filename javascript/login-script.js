@@ -23,7 +23,6 @@ $(document).ready(function () {
     
         $.ajax(settings).done(function (response) {
             console.log(response); 
-
             for (var i  = 0; i < response.length; i++) {
                 if(response[i].Username == usernameInput && response[i].Password == passwordInput){
                     sessionStorage.setItem("id", response[i]._id);
@@ -47,9 +46,13 @@ $(document).ready(function () {
 
     // Event Listener
     $("#login-submit").on("click", function(e){
+<<<<<<< Updated upstream
         // hides the entire page and show loading screen
         $('.center').hide();
         $('.loading-screen').show();
-        loginCheck();  
+=======
+        e.preventDefault();
+>>>>>>> Stashed changes
+        loginCheck();
     });
 });

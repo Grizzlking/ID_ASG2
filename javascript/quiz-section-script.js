@@ -1,11 +1,11 @@
 $(document).ready(function () {
     const APIKEY = "63ce80d5969f06502871b127";
 
+    var subject = localStorage.getItem("subject");
+
     retrieveQuizData();
 
     function retrieveQuizData(){
-        let content = "";
-
         var settings = {
             "async": true,
             "crossDomain": true,
@@ -20,11 +20,11 @@ $(document).ready(function () {
           
           $.ajax(settings).done(function (response) {
             console.log(response);
-            // Replace geography with appropiate cat
-            $('#test').append(`<h1>Geography</h1>`) 
-            
-            for (var i = 0; i < response.length; i++){
-                if (response[i].QuizCat == 'Geography'){
+            $('#test').append(`<h1>${subject}</h1>`);
+
+            for(var i = 0; i < response.length; i++){
+                if(response[i]["QuizCat"] == subject){
+                    
                     $('#test').append(`
                     <div class="quiz-block">
                         <div class="image-container">
@@ -36,7 +36,6 @@ $(document).ready(function () {
                         </div>
                     </div>`)
                 }
-
             }
         });
     }
