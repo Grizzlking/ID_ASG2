@@ -1,0 +1,23 @@
+.log-out-account-button{
+    background-color: rgb(83, 83, 173);
+    color:white;
+    padding: 10px 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.log-out-account-button:hover{
+    transform: scale(1.05);
+}
+
+
+.delete-account-button{
+    background-color: rgb(191, 47, 47);
+    color:white;
+    padding: 10px 5px;
+    border: none;
+    border-radius: 5px;
+}
+.delete-account-button:hover{
+    transform: scale(1.05);
+}
