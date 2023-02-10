@@ -78,7 +78,7 @@ $(document).ready(function(){
                 else if(password != check_password){
                     alert("Password didn't match try again.");
                 }
-                else if(password == check_password && value){
+                else if(password == check_password){
                     signUp();
                     window.location.replace("index.html");
                 }

@@ -5,6 +5,7 @@ $(document).ready(function () {
     const APIKEY = "63ce80d5969f06502871b127";
 
     function loginCheck(){
+        var allowlogin = false;
         var usernameInput = $('#username-input').val();
         var passwordInput = $('#password-input').val();
 
@@ -27,13 +28,19 @@ $(document).ready(function () {
                 if(response[i].Username == usernameInput && response[i].Password == passwordInput){
                     sessionStorage.setItem("id", response[i]._id);
                     window.location.replace("index.html");
+                    allowlogin = true;
                 }
-                else{
-                    // if login fail
-                    $('.center').show();
-                    $('.loading-screen').hide();
-                    alert('login failed');
+            }
+            // if login fail
+            if (allowlogin == false){
+                if(passwordInput == "" && usernameInput == ""){
+                    alert('the field left empty');
                 }
+                else if(passwordInput == ""){
+                    alert('password field left empty');
+                }    
+                $('.center').show();
+                $('.loading-screen').hide(); 
             }
         });
     }
@@ -43,6 +50,6 @@ $(document).ready(function () {
         // hides the entire page and show loading screen
         $('.center').hide();
         $('.loading-screen').show();
-        loginCheck();
+        loginCheck();  
     });
 });

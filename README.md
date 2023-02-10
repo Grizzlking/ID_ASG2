@@ -93,7 +93,25 @@ The following data structure is used
 |quiz|Select 1 quiz||Used to get assign that one quiz a leaderboard with all the account details
 
 ## Testing
+1. Sign in page
+    1. Once you enter the website you will face the "Login" page
+    2. If you want do not have an account click the "sign up" link 
+    3. Try to submit a form with the a name that already is registered with an incorrect password
+    4. Try to submit an empty form
+    5. Try to submit a form with empty password field 
+    6. Try to submit a form with different inputs in "create password" and "check password" field
+    7. Try to submit a form with a name and correct passwords and see if after sign in, it will redirect to the log in page
 
+2. log in page
+    1. Try to submit an empty form
+    2. Try to submit a form with an empty password field 
+    3. Try to submit a form with the correct name and correct password and see if after log in, it will redirect to 
+
+3. Home page
+    1. Try to go to profile page
+    2. Try to go to Quizzes and click one of the dropdown items
+    3. Try to click throught the carousel
+    
 ## Credits
 
 ### Content
