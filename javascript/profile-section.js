@@ -24,10 +24,9 @@ $(document).ready(function () {
                  // for categories in item list
                 for (var i  = 0; i < response[0]["item-list"].length; i++) {
                     $('#profile-img').val(response[0].ProfilePic);
-                    $('#profile-name').val(response[0].Username);
-
-                  
+                    $('#profile-name').val(response[0].Username);               
                 }
+                
                 for (var x  = 0; x < response[0]["item-list"].length; x++){
                     if ($('#' + response[0]["item-list"][x]["item-cat"] ).length){
                     }
