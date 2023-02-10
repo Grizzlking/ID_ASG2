@@ -46,13 +46,9 @@ $(document).ready(function () {
 
     // Event Listener
     $("#login-submit").on("click", function(e){
-<<<<<<< Updated upstream
         // hides the entire page and show loading screen
         $('.center').hide();
         $('.loading-screen').show();
-=======
-        e.preventDefault();
->>>>>>> Stashed changes
         loginCheck();
     });
 });
